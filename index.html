@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>國立科技高中─校園社團介紹網</title>
+    <style>
+        #main{
+            width: 1024px;
+            height: 768px;
+            margin: auto;
+            /* background: lightblue; */
+        }
+
+        #top{
+            width: 1000px;
+            height: 65px;
+            margin: auto;
+            /* background: lightcoral; */
+        }
+
+        #left{
+            width: 215px;
+            height: calc(768px - 65px - 20px );
+            margin-left: 12px;
+            float: left;
+            
+            /* background: lightgreen; */
+        }
+
+        #menu{
+            width: 215px;
+            height: calc(768px - 65px - 20px - 25px);
+            /* background: darkblue; */
+
+            div{
+                font-family:"標楷體";
+                font-size: 24px;
+                color: #ff00ff;
+                font-weight: 500;
+                text-decoration: underline;
+                text-align: center;
+            }
+
+            td{
+                width: 215px;
+                height: 35px;
+                font-family:"標楷體";
+                font-size: 16px;
+                color: black;
+                text-align: center;
+                background: url("./images/menu1.png") no-repeat center;
+            }
+
+            td:hover{
+                background: url("./images/menu2.png")no-repeat center;
+            }
+        }
+        /* 也可以 #menu div {}*/
+
+        
+
+        #update{
+            width: 215px;
+            height: 35px;;
+            height: 25px;
+            font-size: 16px;
+            color: black;
+            text-align: center;
+            font-family:"標楷體";
+        }
+
+        #right{
+            width: 770px;
+            height: calc(768px - 65px - 20px );
+            float: right;
+            margin-right: 12px;
+            /* background: lightsalmon; */
+        }
+
+        marquee{
+            width: 770px;
+            height: 29px;
+            font-family:"標楷體";
+            font-size: 24px;
+            color:#00f ;
+        }
+
+        iframe{ 
+            width: 770px;
+            height: calc(768px - 65px - 20px - 29px);
+        }
+
+        #footer{
+            width: 1000px;
+            height: 20px;
+            margin: auto;
+            /* 清除浮動 */
+            clear: both;
+            /* background: #777; */
+
+            font-size: 16px;
+            color: black;
+            text-align: center;
+            font-family:"標楷體";
+        }
+
+    
+
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="top"><a href="./index.html"><img src="./images/logo.png" alt="國立科技高中校園社團介紹網" title="國立科技高中校園社團介紹網"></a></div>
+        <div id="left">
+            <div id="menu">
+                <div>社團介紹</div>
+                <table>
+                    <tr>
+                        <td><a href="./guitar_history.html" target="iframe">吉他社</a></td>
+                    </tr>
+                    <tr>
+                        <td>熱舞社</td>
+                    </tr>
+                    <tr>
+                        <td>棒球社</td>
+                    </tr>
+                    <tr>
+                        <td>羽球社</td>
+                    </tr>
+                    <tr>
+                        <td>足球社</td>
+                    </tr>
+                    <tr>
+                        <td>童軍社</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="update">最近更新日期：2026/05/26</div>
+        </div>
+        <div id="right">
+            <marquee>歡迎光臨校園社團介紹網，參觀後請支持社團活 動並熱烈參與</marquee>
+            <!-- main.html預設頁，每題都有 -->
+            <iframe src="./main.html" frameborder="0" name="iframe"></iframe>
+        </div>
+        <div id="footer">網頁設計及維護：04</div>
+    </div>
+</body>
+</html>
